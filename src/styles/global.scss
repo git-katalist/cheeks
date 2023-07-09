@@ -1,0 +1,31 @@
+@import "./_fonts.scss";
+@import "./_header.scss";
+@import "./_article.scss";
+@import "./_colors.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  //   background-color: red;
+  position: relative;
+}
+
+html {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-smooth: always;
+  line-height: 1.6;
+}
+
+h1 {
+  color: $dark;
+  font-size: 3em;
+  font-family: $fontSBold;
+}
+
+footer {
+  padding: 0 2rem;
+}

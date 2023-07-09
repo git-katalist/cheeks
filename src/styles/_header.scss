@@ -1,0 +1,139 @@
+header {
+  background-color: black;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  //   align-content: center;
+  align-items: center;
+
+  .logo a {
+    // flex: 1;
+    color: white;
+    text-decoration: none;
+  }
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    // width: 100%;
+    // flex: 1;
+    position: absolute;
+    width: 60%;
+    flex-direction: column;
+    top: 60px;
+    left: -100%;
+    // right: -100%;
+    background-color: #333;
+    height: calc(100vh - 70px);
+    // padding: 0 2rem;
+    transition: 0.3s ease-in-out;
+    // overflow: hidden;
+
+    &.active {
+      //   right: 0;
+      left: 0;
+      transition: 0.3s ease-in-out;
+      //   background-color: white;
+    }
+
+    // .nav-link {
+    //   transition: 0.3s ease-in-out;
+    //   &.active {
+    //     // background-color: white;
+    //     width: 100%;
+    //     display: block;
+    //     padding: 0 2rem;
+    //   }
+    // }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.3rem 2rem;
+
+      &.active {
+        background-color: white;
+        color: black;
+      }
+    }
+
+    &.nav-link {
+      transition: 0.3s ease-in-out;
+    }
+  }
+  .hamburger {
+    // display: none;
+    color: white;
+    display: inline-block;
+    // height: 60%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    width: 100%;
+    justify-content: space-between;
+    .logo {
+      display: flex;
+      flex: 1;
+      width: 100%;
+    }
+    .nav-menu {
+      flex-direction: row;
+      position: initial;
+      height: 60px;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 0rem;
+      background-color: black;
+
+      li {
+        height: 100%;
+      }
+
+      .nav-link {
+        height: 100%;
+        // display: inline-block;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        transition: background-color 650ms ease-in-out;
+
+        // .active {
+        //   align-items: center;
+        //   display: flex;
+        //   height: 70px;
+        //   align-items: center;
+        // }
+
+        // &:hover {
+        //   background-color: white;
+        //   color: black;
+        // }
+
+        &.active {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .hamburger {
+      display: none;
+      color: white;
+    }
+  }
+}
