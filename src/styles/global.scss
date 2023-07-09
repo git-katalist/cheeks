@@ -1,4 +1,5 @@
-@import "./_fonts.scss";
+// @import "./_fonts.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import "./_header.scss";
 @import "./_article.scss";
 @import "./_colors.scss";
@@ -15,7 +16,7 @@ body {
 }
 
 html {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-smooth: always;
   line-height: 1.6;
 }
@@ -23,7 +24,7 @@ html {
 h1 {
   color: $dark;
   font-size: 3em;
-  font-family: $fontSBold;
+  // font-family: $fontSBold;
 }
 
 footer {
