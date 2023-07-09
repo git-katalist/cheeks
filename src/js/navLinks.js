@@ -13,13 +13,18 @@ hamburger.addEventListener("click", () => {
 //   })
 // );
 
-const navLinksEls = document.querySelectorAll(".nav-link");
-const windowPathname = window.location.pathname;
+// const navLinksEls = document.querySelectorAll(".nav-link");
+// const windowPathname = window.location.pathname;
 
-navLinksEls.forEach((navLinkEl) => {
-  const navlinkPathname = new URL(navLinkEl.href).pathname;
-  if (windowPathname === navlinkPathname) {
-    navLinkEl.classList.add("active");
+// navLinksEls.forEach((navLinkEl) => {
+//   const navlinkPathname = new URL(navLinkEl.href).pathname;
+//   if (windowPathname === navlinkPathname) {
+//     navLinkEl.classList.add("active");
+//   }
+// });
+// console.log(window.location.pathname)
+document.querySelectorAll(".nav-link").forEach((link) => {
+  if (link.href === window.location.href) {
+    link.setAttribute("aria-current", "page");
   }
 });
-console.log(window.location.pathname);

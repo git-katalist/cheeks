@@ -1,5 +1,5 @@
-// @import "./_fonts.scss";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import "./_fonts.scss";
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import "./_header.scss";
 @import "./_article.scss";
 @import "./_colors.scss";
@@ -13,11 +13,13 @@
 body {
   //   background-color: red;
   position: relative;
+  font-family: sans-serif;
+  line-height: 1.6;
 }
 
 html {
-  font-family: "Montserrat", sans-serif;
-  font-smooth: always;
+  // font-family: "Montserrat", sans-serif;
+  // font-smooth: always;
   line-height: 1.6;
 }
 

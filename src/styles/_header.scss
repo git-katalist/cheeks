@@ -60,7 +60,11 @@ header {
       display: block;
       padding: 0.3rem 2rem;
 
-      &.active {
+      // &.active {
+      //   background-color: white;
+      //   color: black;
+      // }
+      &[aria-current="page"] {
         background-color: white;
         color: black;
       }
